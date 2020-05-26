@@ -560,11 +560,50 @@
     background-size: cover; 
 }
 
+@media (max-width : 1280px) {
+    .cover{
+        margin-left: calc( (100vw - 1024px)/(1280 - 1024) * (48 - 0) + 0px);
+        margin-right: calc( (100vw - 1024px)/(1280 - 1024) * (48 - 0) + 0px);
+    }
+}
+
+@media (max-width : 1023px) {
+    .cover{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: calc( (100vw - 768px)/(1023 - 768) * (92 - 88) + 88px);
+    }
+}
+
+@media (max-width : 767px) {
+    .cover{
+        margin-top: calc( (100vw - 320px)/(767 - 320) * (88 - 64) + 64px);
+}
+}
+
 .cover__overlay{
     height: 740px;
     width: 100%;
     background-color: rgba(16,17,18,0.3);
     transition: background-color 0.4s ease;
+}
+
+@media (max-width : 1280px) {
+    .cover__overlay{
+        height: calc( (100vw - 1024px)/(1280 - 1024) * (740 - 640) + 640px);
+    }
+}
+
+@media (max-width : 1023px) {
+    .cover__overlay{
+        height: calc( (100vw - 768px)/(1023 - 768) * (640 - 480) + 480px);
+    }
+}
+
+@media (max-width : 767px) {
+    .cover__overlay{
+        height: calc( (100vw - 320px)/(767 - 320) * (480 - 200) + 200px);
+}
 }
 
 .cover__overlay:hover{
@@ -586,6 +625,26 @@
     opacity: 0.8;
 }
 
+@media (max-width : 1280px) {
+    .cover__title{
+        padding-top: calc( (100vw - 1024px)/(1280 - 1024) * (245 - 195) + 195px);
+    }
+}
+
+@media (max-width : 1023px) {
+    .cover__title{
+        padding-top: calc( (100vw - 768px)/(1023 - 768) * (195 - 115) + 115px);
+    }
+}
+
+@media (max-width : 767px) {
+    .cover__title{
+        padding-top: calc( (100vw - 320px)/(767 - 320) * (115 - 33) + 33px);
+        font-size: calc( (100vw - 320px)/(767 - 320) * (72 - 32) + 32px);
+        line-height: calc( (100vw - 320px)/(767 - 320) * (76 - 35) + 35px);
+}
+}
+
 .cover__title-link{
     text-decoration: none;
     color: white;
@@ -602,22 +661,59 @@
     text-align: center;
 }
 
+@media (max-width : 767px) {
+    .cover__subtitle{
+        margin-top: calc( (100vw - 320px)/(767 - 320) * (32 - 16) + 16px);
+        font-size: calc( (100vw - 320px)/(767 - 320) * (18 - 14) + 14px);
+        line-height: calc( (100vw - 320px)/(767 - 320) * (22 - 16) + 16px);
+}
+}
+
 .footer{
     margin:92px 48px 24px 48px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+@media (max-width : 1023px) {
+    .footer{
+        margin-top: calc( (100vw - 768px)/(1023 - 768) * (92 - 88) + 88px);
+        margin-left: calc( (100vw - 768px)/(1023 - 768) * (48 - 24) + 24px);
+        margin-right: calc( (100vw - 768px)/(1023 - 768) * (48 - 24) + 24px);
+    }
+}
+
+@media (max-width : 767px) {
+    .footer{
+        margin-top: calc( (100vw - 320px)/(767 - 320) * (88 - 64) + 64px);
+        margin-left: calc( (100vw - 320px)/(767 - 320) * (24 - 16) + 16px);
+        margin-right: auto;
+        /* flex-direction: column;
+        justify-content: flex-start;
+        wrap: nowrap; */
+        display: block;
+        width: max-content;
+}
 }
 
 .footer__links{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
     list-style: none;
     margin: 0;
     padding: 0;
+    width: max-content;
+}
+
+@media (max-width : 767px) {
+    .footer__links{
+        display:block;
+        width: max-content;
+}
 }
 
 .footer__link{
@@ -634,6 +730,19 @@
     opacity: 0.8;
 }
 
+@media (max-width : 767px) {
+    .footer__link{
+        font-size: calc( (100vw - 320px)/(767 - 320) * (16 - 24) + 24px);
+        line-height: calc( (100vw - 320px)/(767 - 320) * (18 - 24) + 24px);
+        margin-bottom: 32px;
+}
+
+.footer__link:nth-of-type(5) {
+    margin-bottom:48px;
+}
+}
+
+
 .footer__copyright {
     font-weight: normal;
     font-size: 14px;
@@ -641,4 +750,11 @@
     text-align: right;
     margin: auto;
     margin-right: 0;
+}
+
+@media (max-width : 767px) {
+    .footer__copyright{
+        line-height: calc( (100vw - 320px)/(767 - 320) * (16 - 14) + 14px);
+        margin-bottom: 24px;
+        text-align: left;
 }
