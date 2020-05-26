@@ -1,0 +1,23 @@
+.place__title{
+    grid-area: title;
+    margin: 0;
+    height: max-content;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+}
+
+@media (max-width : 1023px) {
+    .place__title{
+        font-size: calc( (100vw - 768px)/(1023 - 768) * (72 - 42) + 42px);
+        line-height: calc( (100vw - 768px)/(1023 - 768) * (76 - 46) + 46px);
+    }
+}
+
+@media (max-width : 767px) {
+        .place__title{
+            font-size: calc( (100vw - 320px)/(767 - 320) * (42 - 32) + 32px);
+            line-height: calc( (100vw - 320px)/(767 - 320) * (46 - 35) + 35px);
+            margin-left: calc( (100vw - 320px)/(767 - 320) * (0 - 16) + 16px);
+    }
+}

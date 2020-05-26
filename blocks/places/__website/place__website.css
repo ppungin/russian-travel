@@ -1,0 +1,15 @@
+.place__website {
+    grid-area: website;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+@media (max-width : 767px) {
+    .place__website{
+        display: none;
+}
+}

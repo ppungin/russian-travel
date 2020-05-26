@@ -1,0 +1,39 @@
+@import url(./__logo/header__logo.css);
+@import url(./__lang-links/header__lang-links.css);
+@import url(./__lang-link/header__lang-link.css);
+
+
+.header{
+    max-width: 1184px;
+    margin: auto;
+    padding: 0 48px;
+    padding-top: 28px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+@media (max-width : 1024px) {
+    .header{
+        padding-right: calc( (100vw - 768px)/(1024 - 768) * (48 - 24) + 24px);
+        padding-left: calc( (100vw - 768px)/(1024 - 768) * (48 - 24) + 24px);
+    }
+}
+
+
+@media (max-width : 767px) {
+    .header{
+        padding-top: calc( (100vw - 321px)/(767 - 321) * (24 - 16) + 16px);
+        padding-right: calc( (100vw - 321px)/(767 - 321) * (24 - 16) + 16px);
+        padding-left: calc( (100vw - 321px)/(767 - 321) * (24 - 16) + 16px);
+    }
+}
+
+@media (max-width : 320px) {
+    .header{
+        padding-top: 16px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}

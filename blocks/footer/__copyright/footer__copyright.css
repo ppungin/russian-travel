@@ -1,0 +1,16 @@
+
+.footer__copyright {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    margin: auto;
+    margin-right: 0;
+}
+
+@media (max-width : 767px) {
+    .footer__copyright{
+        line-height: calc( (100vw - 320px)/(767 - 320) * (16 - 14) + 14px);
+        text-align: left;
+}
+}
