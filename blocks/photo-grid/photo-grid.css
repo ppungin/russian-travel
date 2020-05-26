@@ -3,6 +3,7 @@
 .photo-grid{
     margin: auto 48px;
     margin-top:92px;
+    display: -ms-grid;
     display: grid;
     gap: 16px;
     grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));

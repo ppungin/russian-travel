@@ -2,6 +2,8 @@
     margin: auto;
     margin-top: 32px;
     max-width: 360px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     font-weight: normal;
     font-size: 18px;

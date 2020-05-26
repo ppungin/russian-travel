@@ -1,4 +1,6 @@
 .place__url-heading {
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
     width: 100%;
     color: #AAAAAA;
