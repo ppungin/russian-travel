@@ -1,5 +1,6 @@
 @import url(./__links/footer__links.css);
 @import url(./__link/footer__link.css);
+@import url(./__link-text/footer__link-text.css);
 @import url(./__copyright/footer__copyright.css);
 @import url(./__link/_active_true/header__lang-link_active_true.css);
 @import url(./__link/_active_false/header__lang-false.css);

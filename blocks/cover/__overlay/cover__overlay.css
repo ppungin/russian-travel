@@ -1,7 +1,7 @@
 .cover__overlay{
     height: 740px;
     width: 100%;
-    background-color: rgba(16,17,18,0.3);
+    background-color: rgba(42,44,47,0.3);
     -webkit-transition: background-color 0.4s ease;
     -o-transition: background-color 0.4s ease;
     transition: background-color 0.4s ease;
