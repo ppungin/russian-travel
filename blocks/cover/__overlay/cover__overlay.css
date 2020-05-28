@@ -5,6 +5,7 @@
     -webkit-transition: background-color 0.4s ease;
     -o-transition: background-color 0.4s ease;
     transition: background-color 0.4s ease;
+
 }
 
 @media (max-width : 1280px) {
@@ -26,5 +27,5 @@
 }
 
 .cover__overlay:hover{
-    background-color: rgba(16,17,18,0.8);
+     background-color: rgba(42,44,47,0.8); 
 }

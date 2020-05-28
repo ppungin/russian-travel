@@ -1,7 +1,7 @@
 @import url(./__title/intro__title.css);
 @import url(./__text/intro__text.css);
 @import url(./__list/intro__list.css);
-@import url(./__list/_count/intro__list_count.css);
+@import url(./__list-count/intro__list-count.css);
 
 .intro{
     margin: auto 148px;

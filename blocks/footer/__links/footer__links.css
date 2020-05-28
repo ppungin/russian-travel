@@ -22,8 +22,5 @@
 @media (max-width : 767px) {
     .footer__links{
         display:block;
-        width: -webkit-max-content;
-        width: -moz-max-content;
-        width: max-content;
 }
 }
